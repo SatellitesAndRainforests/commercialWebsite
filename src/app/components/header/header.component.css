@@ -1,0 +1,40 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  color: white;
+  background-color: black;
+  height: 2rem;
+  position: fixed;
+  z-index: 2;
+}
+
+#title {
+  font-family: times new roman, serif ;
+  font-size: 1rem;
+}
+
+.icon-button {
+  background-color: black;
+  color: white;
+  border: none;
+  transition-duration: 0.4s;
+}
+
+.icon-button:hover {
+  color: green;
+}
+
+
+/* --- sidenav ---  */
+
+mat-sidenav {
+  position: fixed;
+  padding-top: 2rem;
+  background-color: black;
+}
+
+
+
+

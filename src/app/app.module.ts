@@ -1,0 +1,57 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDividerModule } from '@angular/material/divider';
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+
+
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './components/header/header.component';
+import { MapComponent } from './components/map/map.component';
+import { HomeComponent } from './pages/home/home.component';
+import { WorldmapComponent } from './pages/worldmap/worldmap.component';
+import { TablesComponent } from './pages/tables/tables.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NetworksComponent } from './pages/networks/networks.component';
+import { NetworkComponent } from './components/network/network.component';
+import { DataComponent } from './components/data/data.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    MapComponent,
+    HomeComponent,
+    WorldmapComponent,
+    TablesComponent,
+    NetworksComponent,
+    NetworkComponent,
+    DataComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MatSlideToggleModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatTooltipModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    MatDividerModule,
+    NgbModule,
+    FormsModule,
+    MatButtonModule,
+
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
