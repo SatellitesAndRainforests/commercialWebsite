@@ -189,6 +189,9 @@ export class MapComponent implements OnInit {
     });
     map.addLayer(this.baseLayerGroup);
 
+    // map loads width slightly incorrectly without this line:
+    setTimeout(() => { map.updateSize(); });
+
   }
 
 

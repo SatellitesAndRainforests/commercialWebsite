@@ -33,6 +33,7 @@ mat-sidenav {
   position: fixed;
   padding-top: 2rem;
   background-color: black;
+  width: 2.54rem;
 }
 
 
