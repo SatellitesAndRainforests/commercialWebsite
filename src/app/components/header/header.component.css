@@ -8,11 +8,18 @@ mat-toolbar {
   height: 2rem;
   position: fixed;
   z-index: 2;
+  background: none;
+
+}
+
+#title:hover {
+  color: #eeedf5;
+  cursor: pointer;
 }
 
 #title {
-  font-family: times new roman, serif ;
-  font-size: 1rem;
+  padding-top: 0.15rem;
+  font-size: 1.1rem;
 }
 
 .icon-button {
@@ -26,13 +33,17 @@ mat-toolbar {
   color: green;
 }
 
+button {
+  background: none !important;
+}
+
 
 /* --- sidenav ---  */
 
 mat-sidenav {
   position: fixed;
   padding-top: 2rem;
-  background-color: black;
+  background: none;
   width: 2.54rem;
 }
 

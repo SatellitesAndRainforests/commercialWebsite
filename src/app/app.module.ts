@@ -1,3 +1,6 @@
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
@@ -8,21 +11,24 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
-
-
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { MatTableModule } from '@angular/material/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './components/header/header.component';
-import { MapComponent } from './components/map/map.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatPaginatorModule } from '@angular/material/paginator';
+
+
 import { HomeComponent } from './pages/home/home.component';
 import { WorldmapComponent } from './pages/worldmap/worldmap.component';
 import { TablesComponent } from './pages/tables/tables.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NetworksComponent } from './pages/networks/networks.component';
+
+import { HeaderComponent } from './components/header/header.component';
+import { MapComponent } from './components/map/map.component';
 import { NetworkComponent } from './components/network/network.component';
 import { DataComponent } from './components/data/data.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+
+
 
 @NgModule({
   declarations: [
@@ -35,6 +41,7 @@ import { DataComponent } from './components/data/data.component';
     NetworksComponent,
     NetworkComponent,
     DataComponent,
+    HomepageComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,9 +53,11 @@ import { DataComponent } from './components/data/data.component';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatDividerModule,
-    NgbModule,
     FormsModule,
     MatButtonModule,
+    MatTableModule,
+    HttpClientModule,
+    MatPaginatorModule, 
 
   ],
   providers: [],

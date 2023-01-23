@@ -14,8 +14,10 @@
   <span id="title" routerLink="">Rainforest Information System</span>
   <span class="spacer"></span>
   <p>‎</p>
-  <button mat-icon-button matTooltip="Dark Mode" matTooltipPosition="below" class="icon-button" aria-label=""><mat-icon>wb_sunny</mat-icon></button>
+<!--  <button mat-icon-button matTooltip="Dark Mode" matTooltipPosition="below" class="icon-button" aria-label=""><mat-icon>wb_sunny</mat-icon></button>
   <button mat-icon-button matTooltip="Dark Mode" matTooltipPosition="below" class="icon-button" aria-label=""><mat-icon>camera_roll</mat-icon></button>
+
+-->
 
  <button 
    mat-icon-button matTooltip="Website" 
@@ -32,14 +34,14 @@
 
 
 <mat-sidenav-container autosize>
-  <mat-sidenav #sidenav fixedInViewport="true" mode="side">
+  <mat-sidenav #sidenav fixedInViewport="true" mode="side" (click)="sidenav.toggle()">
 
 
     <button mat-icon-button matTooltip="Home" matTooltipPosition="right" routerLink="/"  class="icon-button" aria-label=""><mat-icon>home</mat-icon></button>
 
     <mat-divider></mat-divider>
 
-    <button mat-icon-button matTooltip="World Map" matTooltipPosition="right" routerLink="/worldmap" class="icon-button" aria-label=""><mat-icon>map</mat-icon></button>
+    <button mat-icon-button matTooltip="World Map" matTooltipPosition="right" routerLink="/worldmap" class="icon-button" aria-label=""><mat-icon>public</mat-icon></button>
 
 
     <mat-divider></mat-divider>
