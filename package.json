@@ -43,6 +43,7 @@
     "@ng-bootstrap/ng-bootstrap": "^13.0.0",
     "@popperjs/core": "^2.10.2",
     "bootstrap": "^5.2.0",
+    "ng-mat-carousel": "^0.11.1",
     "ol": "^7.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

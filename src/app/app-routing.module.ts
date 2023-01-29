@@ -5,6 +5,7 @@ import { TablesComponent } from './pages/tables/tables.component';
 import { HomeComponent } from './pages/home/home.component';
 import { WorldmapComponent } from './pages/worldmap/worldmap.component';
 import { NetworksComponent } from './pages/networks/networks.component';
+import { UploadComponent } from './pages/upload/upload.component';
 
 const routes: Routes = [
 
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'tables', component: TablesComponent },
   { path: 'worldmap', component: WorldmapComponent },
   { path: 'networks', component: NetworksComponent },
+  { path: 'upload', component: UploadComponent },
 
 ];
 

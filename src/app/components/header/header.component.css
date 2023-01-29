@@ -4,13 +4,18 @@
 
 mat-toolbar {
   color: white;
-  background-color: black;
   height: 2rem;
   position: fixed;
   z-index: 2;
-  background: none;
+ /* background-color: black; */
+
+  background-image: url('../../../assets/jungleHome.png');
+  background-size: cover;
+
 
 }
+
+
 
 #title:hover {
   color: #eeedf5;

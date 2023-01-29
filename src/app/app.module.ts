@@ -9,13 +9,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { HomeComponent } from './pages/home/home.component';
 import { WorldmapComponent } from './pages/worldmap/worldmap.component';
@@ -27,6 +29,10 @@ import { MapComponent } from './components/map/map.component';
 import { NetworkComponent } from './components/network/network.component';
 import { DataComponent } from './components/data/data.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
+import { AddComponent, DialogComponent } from './components/add/add.component';
+import { UploadComponent } from './pages/upload/upload.component';
+import { SliderComponent } from './components/slider/slider.component';
+
 
 
 
@@ -42,6 +48,10 @@ import { HomepageComponent } from './components/homepage/homepage.component';
     NetworkComponent,
     DataComponent,
     HomepageComponent,
+    AddComponent,
+    DialogComponent,
+    UploadComponent,
+    SliderComponent ,
   ],
   imports: [
     BrowserModule,
@@ -58,8 +68,17 @@ import { HomepageComponent } from './components/homepage/homepage.component';
     MatTableModule,
     HttpClientModule,
     MatPaginatorModule, 
+    MatDialogModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatGridListModule,
+
 
   ],
+  entryComponents: [
+    DialogComponent
+  ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

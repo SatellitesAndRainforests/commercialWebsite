@@ -1,14 +1,15 @@
+#header {
+  background-image: url('../../../assets/jungleHome.png');
+  background-size: cover;
+  height: 2rem;
+}
+
 #page {
   margin: 2.54rem;
   height: 10rem;
   margin-top: 2rem;
 }
 
-#header {
-  background-image: url('../../../assets/jungleHome.png');
-  background-size: cover;
-  height: 2rem;
-}
 
 .text {
   font-size: 0.8rem;
