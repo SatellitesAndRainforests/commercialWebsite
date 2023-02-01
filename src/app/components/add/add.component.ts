@@ -23,6 +23,7 @@ import { createStringXY } from 'ol/coordinate';
 @Component({
   selector: 'app-add',
   templateUrl: './add.component.html',
+  styleUrls: ['add.component.css']
 })
 export class AddComponent {
 
@@ -46,7 +47,7 @@ export class AddComponent {
 @Component({
   selector: 'app-dialog',
   templateUrl: 'dialog.component.html',
-  styleUrls: ['./dialog.component.css']
+  styleUrls: ['dialog.component.css']
 })
 export class DialogComponent implements OnInit {
 

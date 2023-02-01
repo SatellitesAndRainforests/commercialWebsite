@@ -18,6 +18,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+
 
 import { HomeComponent } from './pages/home/home.component';
 import { WorldmapComponent } from './pages/worldmap/worldmap.component';
@@ -27,11 +29,12 @@ import { NetworksComponent } from './pages/networks/networks.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MapComponent } from './components/map/map.component';
 import { NetworkComponent } from './components/network/network.component';
-import { DataComponent } from './components/data/data.component';
+import { DataComponent, DialogOpenComponent, DialogImageComponent } from './components/data/data.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { AddComponent, DialogComponent } from './components/add/add.component';
-import { UploadComponent } from './pages/upload/upload.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { ReferencesComponent } from './components/references/references.component';
+import { RefsComponent } from './pages/refs/refs.component';
 
 
 
@@ -50,8 +53,11 @@ import { SliderComponent } from './components/slider/slider.component';
     HomepageComponent,
     AddComponent,
     DialogComponent,
-    UploadComponent,
-    SliderComponent ,
+    SliderComponent,
+    ReferencesComponent,
+    RefsComponent,
+    DialogOpenComponent,
+    DialogImageComponent 
   ],
   imports: [
     BrowserModule,
@@ -72,11 +78,13 @@ import { SliderComponent } from './components/slider/slider.component';
     ReactiveFormsModule,
     MatFormFieldModule,
     MatGridListModule,
-
+    MatCardModule,
 
   ],
   entryComponents: [
-    DialogComponent
+    DialogComponent,
+    DialogOpenComponent,
+    DialogImageComponent, 
   ],
 
   providers: [],
